@@ -1,12 +1,24 @@
 <!doctype html>
 <html>
 	<head>
+		<script src="../vendors/jquery/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+		<script src="../js/index.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../vendors/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
 		<div id="mainPopup">
-			<h1>Hello extensionizr!</h1>
-			<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.</p>
+			<i class="fas fa-info icons"></i>
+			<h5>Get in the ZONE!</h5>
+			<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Enter Goal..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+				<div class="input-group-append">
+					<input type="number" name="time" id="time" value="45" max>
+					<button class="btn btn-outline-secondary" type="button" id="save-goal">Save</button>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

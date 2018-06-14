@@ -4,6 +4,17 @@
   width: 400px;
   font-family: Helvetica, Ubuntu, Arial, sans-serif;
 }
-h1 {
-  font-size: 2em;
+
+
+h5 {
+  text-align: center;
+}
+
+.icons {
+  display: inline;
+}
+
+#time {
+  width: 60px;
+  text-align: center;
 }
