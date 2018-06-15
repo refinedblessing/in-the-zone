@@ -9,6 +9,14 @@
 h5 {
   text-align: center;
 }
+.list-group {
+  margin-bottom: 10px;
+}
+
+.center,
+#goal-running {
+  margin: auto;
+}
 
 .icons {
   display: inline;

@@ -12,8 +12,21 @@
   "default_locale": "en",
   "background": {
     "page": "src/bg/background.html",
-    "persistent": true
+    "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://news.ycombinator.com/*",
+        "https://facebook.com/*",
+        "*://twitter.com/*",
+        "*://instagram.com/*"
+      ],
+      "js": [
+        "src/js/work.js"
+      ]
+    }
+  ],
   "browser_action": {
     "default_icon": "icons/image.png",
     "default_title": "in the zone",
@@ -22,6 +35,6 @@
   "permissions": [
     "notifications",
     "alarms",
-    "webRequest"
+    "storage"
   ]
 }

@@ -12,12 +12,22 @@
 		<div id="mainPopup">
 			<i class="fas fa-info icons"></i>
 			<h5>Get in the ZONE!</h5>
+			<ul class="list-group" id="goals-list">
+			</ul>
 			<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Enter Goal..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+				<input type="text" class="form-control" id="goal-text" placeholder="Enter Goal..." aria-label="Recipient's username" aria-describedby="basic-addon2">
 				<div class="input-group-append">
-					<input type="number" name="time" id="time" value="45" max>
+					<input type="number" name="time" id="time" value="1" max="5" min="1">
 					<button class="btn btn-outline-secondary" type="button" id="save-goal">Save</button>
 				</div>
+			</div>
+			<div id="break-actions">
+				<input class="btn btn-primary btn-large" id="yoga" style="margin:5px;" type="button" value="Yoga"/>
+        <input class="btn btn-primary btn-large" id="meditate" style="margin:5px;" type="button" value="Meditate"/>        
+        <input class="btn btn-primary btn-large" id="box" style="margin:5px;" type="button" value="Boxing"/>        
+        <!-- <input class="btn btn-primary btn-large" id="current" style="margin:5px;" type="button" value="Current Events" /> -->
+        <input class="btn btn-primary btn-large" id="laugh" style="margin:5px;" type="button" value="Laugh"/>
+        <input class="btn btn-primary btn-large" id="inspiration" style="margin:5px;" type="button" value="Inspiration"/>
 			</div>
 		</div>
 	</body>
